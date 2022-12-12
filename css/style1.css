@@ -24,18 +24,27 @@ header {
 
 img {
     width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center bottom;
+    margin-bottom: 1px;
 }
 
 /* Partie container */
 
-main section h2 {
-    font-family: 'Shrikhand', cursive;
-    text-align: left;
+.pc {
+    background-color:lightgrey;
+    padding-top: 2px;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 1px;
 }
 
-main section i {
+div section h2 {
+    font-family: 'Shrikhand', cursive;
+    text-align: left;
     position: relative;
 }
+
 
 .fa-regular {
     position: absolute;
