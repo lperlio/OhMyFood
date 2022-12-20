@@ -3,14 +3,6 @@
 
 
 
-@media (max-whidth 760px) {
-
-}
-
-*, ::before, ::after {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0px;
     font-family:'Roboto', sans-serif;
@@ -62,7 +54,7 @@ main .city i {
 .reservez button {
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem 2rem;
     border: none;
     border-radius: 2rem;
@@ -106,7 +98,7 @@ li {
 
 i.fas {
     margin-right: 1rem;
-    margin-left: -4px;
+    margin-left: -34px;
 }
 
 .fonct ol li span {
@@ -133,7 +125,7 @@ i.fas {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(211, 211, 211);
@@ -141,21 +133,15 @@ i.fas {
 }
 
 .resto {
+    width: 43%;
     background-color: white;
     border-radius: 20px;
     margin: 20px;
     position: relative;
 }
 
-.resto i {
-    position: relative;
-}
-
-.resto2 i {
-    position: relative;
-}
-
 .resto2 {
+    width: 43%;
     background-color: white;
     border-radius: 20px;
     margin: 20px;
@@ -167,17 +153,23 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
+.m3 {
+    height: 347px;
+}
+
 .resto p {
     padding: 11px;
-    margin-top: 5px;
-    margin-bottom: -17px;
+    margin-top: -7px;
+    margin-bottom: -3px;
+    position: relative;
 }
 
 
 .resto2 p {
     padding: 11px;
-    margin-top: 5px;
-    margin-bottom: -17px;
+    margin-top: -4px;
+    margin-bottom: -1px;
+    position: relative;
 }
 
 .new {
@@ -190,26 +182,16 @@ img {
 }
 
 
-i.far.fa-heart {
-    font-size: 2rem;
-    position: absolue;
-    right: -18rem;
-    top: -2rem;
-}
-
-i.fas.fa-heart {
-    font-size: 2rem;
-    position: absolue;
-    right: -16rem;
-    top: -2rem;
-}
-
 .resto .fas {
     color: transparent;
     background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
     opacity: 0;
     transition: all 100ms ease-in-out;
+    position: relative;
+    z-index: 10;
+    right: -6px;
+    top: -19px;
 }
 
 .resto .fas:hover {
@@ -223,11 +205,47 @@ i.fas.fa-heart {
     background-clip: text;
     opacity: 0;
     transition: all 100ms ease-in-out;
+    position: relative;
+    z-index: 10;
+    right: -6px;
+    top: -19px;
 }
 
 .resto2 .fas:hover {
     opacity: 1;
     transform: translateY(-50%), scale(1.2);
+}
+
+i.far.fa-heart {
+    margin-left: 106px;
+}
+
+i.fas.fa-heart {
+    margin-left: 100px;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.pal {
+    width: 80%;
+}
+
+.not {
+    width: 80%;
+}
+
+.fra {
+    width: 80%;
+}
+
+.del {
+    width: 80%;
 }
 
 /* Partie 6 Footer */
@@ -240,13 +258,14 @@ i.fas.fa-heart {
 }
 
 .pied img {
-    width: 40%;
+    width: 20%;
     padding-top: 20px;
     color: white;
 }
 
 .pied p {
     color: white;
+    margin-left: 20px;
 }
 
 .alignement {
@@ -264,3 +283,33 @@ a:link {
     text-decoration: none;
     color: white;
 }
+
+i.fas.fa-utensils {
+    margin-left: -40px;
+}
+
+i.fas.fa-hands-helping {
+    margin-left: -40px;
+}
+
+@media (max-width: 768px) {
+
+.container .resto {
+    width: 93%;
+}
+
+.container .resto2 {
+    width: 100%;
+}
+
+.pied img {
+    width: 35%;
+    margin-left: 20px;
+}
+
+.m3 {
+    height: 264px;
+}
+
+}
+

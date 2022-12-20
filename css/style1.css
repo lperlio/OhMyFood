@@ -30,16 +30,27 @@ img {
     margin-bottom: 1px;
 }
 
+
+
 /* Partie container */
 
+
+
 .pc {
+    height: 400px;
+    width: 100%;
     background-color:lightgrey;
-    padding-top: 2px;
+    padding-top: 2spx;
     border-radius: 1rem 1rem 0 0;
     margin-top: 1px;
+    margin-bottom: -36px;
 }
 
-div section h2 {
+.pc section {
+    background-image: url("../images/restaurants/M1.jpg");
+}
+
+.pc section h2 {
     font-family: 'Shrikhand', cursive;
     text-align: left;
     position: relative;
@@ -50,7 +61,7 @@ div section h2 {
     position: absolute;
     font-size: 2rem;
     right: 15px;
-    bottom: 256px;
+    bottom: 59px;
 }
 
 .fa-solid {
@@ -74,13 +85,30 @@ div section h2 {
     transform: translateY(-50%), scale(1.2);
 }
 
+/* partie cartes */
+
+.menu-carte {
+    padding: 1rem;
+    margin: -7px;
+}
+
+.carte {
+    background: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.entrees, .plats, .desserts {
+    border: 1px solid black;
+}
+
 
 
 /* Partie 6 Footer */
 
 .pied {
     background-color: #353535;
-    margin-top: 50px;
+    margin-top: -16px;
     padding-left: 30px;
     padding-bottom: 20px;
 }
