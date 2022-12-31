@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@keyframes rotation {
+    0% {transform: rotate(-270deg);}
+    100% {transform: rotate(0deg);}  
+}
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     margin: 0px;
@@ -49,11 +57,13 @@ i.fas.fa-heart {
     opacity: 0;
     transition: all 100ms ease-in-out;
     margin-right: 46px;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 i.fas.fa-heart:hover {
     opacity: 1;
-    transform: translateY(-50%), scale(1.2);
+    animation: mouvementi 1s ease;
 }
 
 i.far.fa-heart {
@@ -66,6 +76,9 @@ i.far.fa-heart {
     padding: 1rem;
     margin: -7px;
     background-color: #f6f6f6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .carte {
@@ -73,12 +86,44 @@ i.far.fa-heart {
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entrees:hover .coche .fas {
+    margin-right: 0;
+    animation-duration: 1s;
+    animation-name: rotation;
 }
 
 .entrees {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray ;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entrees .choix h4 {
+    margin-bottom: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+h4, p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entrees .prix {
+    margin-bottom: 9px;
+    margin-top: 1px;
 }
 
 p.prix {
@@ -87,33 +132,25 @@ p.prix {
     font-weight: 900;
 }
 
+.coche {
+    background-color:  #99e2d0;
+    font-size: large;
+    margin-top: -9px;
+    font-size: 36px;
+    border-radius: 0px 2px 2px 0px;
+    flex-shrink: 0;
+}
+
 .coche .fas {
-    margin-bottom: 17px;
-    background-color: #99e2d0;
-    margin-right: -3rem;
-    border-radius: 0 1rem 1rem 0;
+   
+    background-color:white;
+    margin-right: -100rem;
     transition: margin-right 0.5s;
-    background-color: #99e2d0;
-    color: white;
-    border-radius: 0 20 20 0;
-    place-items: center;
-}
-
-/* .fas fa-check {
-    color: #99e2d0;
-    place-items: center;
+    color:  #99e2d0;
     border-radius: 50%;
-    background-color: white;
-} */
-
-.entrees:hover .coche .fas {
-    margin-right: 0;
-}
-
-.entrees {
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px lightgray ;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 
@@ -141,7 +178,15 @@ p.prix {
     display: flex;
     align-items: center;
     color: white;
-    margin-bottom: -15px;
+    margin-bottom: 10px;
+}
+
+.devenir {
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-top: 10px;
 }
 
 .alignement span {
@@ -153,9 +198,9 @@ a:link {
     color: white;
 }
 
-@media(max-width 760px) {
+/* @media(max-width 760px) {
 
     .carte {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
