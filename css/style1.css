@@ -21,13 +21,21 @@ header {
     margin-top: -20px;
 }
 
-.head h1 {
-    margin-top: 16px;
+.head {
+    display: flex;
+    align-items: center;
 }
 
-.fa-solid fa-arrow-left {
+h1 {
+    margin-top: 28px;
+    margin-bottom: 23px;
+    margin-left: 105px;
+}
+
+.fa-solid.fa-arrow-left {
     margin-top: 1px;
-    margin-left: 1px;
+    margin-left: -261px;
+    font-size: 20px;
 }
 
 /* image */
@@ -88,6 +96,7 @@ i.far.fa-heart {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 .menu-carte h3 {
@@ -200,6 +209,7 @@ p.prix {
     transform: scale(1.03);
     transition: all 300ms;
     opacity: 1;
+    cursor: pointer;
 }
 
 /* Partie 7 Footer */
