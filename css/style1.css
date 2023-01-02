@@ -21,6 +21,15 @@ header {
     margin-top: -20px;
 }
 
+.head h1 {
+    margin-top: 16px;
+}
+
+.fa-solid fa-arrow-left {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
 /* image */
 .image {
     background-image: url(../images/restaurants/M1.jpg);
@@ -79,6 +88,22 @@ i.far.fa-heart {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.menu-carte h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+}
+
+.menu-carte h3::after {
+    content: "";
+    position: absolute;
+    height: 0.25rem;
+    width: 3.25rem;
+    background-color: #99e2d0;
+    top: 20px;
+    left: 1px;
 }
 
 .carte {
@@ -152,9 +177,32 @@ p.prix {
     font-size: 20px;
 }
 
+/* Partie 6 Boutton */
 
+.commander {
+    text-align: center;
+}
 
-/* Partie 6 Footer */
+.commander button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(#9356DC, #FF79DA);
+    box-shadow: 4px 3px 17px -1px #000000;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+} 
+
+.commander button:hover {
+    transform: scale(1.03);
+    transition: all 300ms;
+    opacity: 1;
+}
+
+/* Partie 7 Footer */
 
 .pied {
     background-color: #353535;
