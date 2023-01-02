@@ -91,14 +91,13 @@ i.far.fa-heart {
     text-overflow: ellipsis;
 }
 
-.entrees:hover .coche .fas {
+.menu:hover .coche .fas {
     margin-right: 0;
     animation-duration: 1s;
     animation-name: rotation;
 }
 
-.entrees {
-    border: 1px solid black;
+.menu {
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px lightgray ;
     display: flex;
@@ -108,7 +107,7 @@ i.far.fa-heart {
     text-overflow: ellipsis;
 }
 
-.entrees .choix h4 {
+.menu .choix h4 {
     margin-bottom: 1px;
     overflow: hidden;
     white-space: nowrap;
@@ -121,7 +120,7 @@ h4, p {
     text-overflow: ellipsis;
 }
 
-.entrees .prix {
+.menu .prix {
     margin-bottom: 9px;
     margin-top: 1px;
 }
