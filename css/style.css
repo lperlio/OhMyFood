@@ -126,14 +126,11 @@ i.fas {
 .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     background-color: rgb(211, 211, 211);
     margin: -15px;
 }
 
 .resto {
-    width: 43%;
     background-color: white;
     border-radius: 20px;
     margin: 20px;
@@ -141,7 +138,7 @@ i.fas {
 }
 
 .resto2 {
-    width: 43%;
+    
     background-color: white;
     border-radius: 20px;
     margin: 20px;
@@ -154,24 +151,12 @@ img {
     object-fit: cover;
 }
 
-.m3 {
-    height: 347px;
-}
-
-.resto p {
+.heart p {
     padding: 11px;
     margin-top: -7px;
     margin-bottom: -3px;
-    position: relative;
 }
 
-
-.resto2 p {
-    padding: 11px;
-    margin-top: -4px;
-    margin-bottom: -1px;
-    position: relative;
-}
 
 .new {
     background-color: #99E2D0;
@@ -183,7 +168,7 @@ img {
 }
 
 
-.resto .fas {
+.heart .fas {
     color: transparent;
     background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
@@ -191,67 +176,35 @@ img {
     transition: all 100ms ease-in-out;
     position: relative;
     z-index: 10;
-    right: -6px;
-    top: -19px;
     -webkit-background-clip: text;
     color: transparent;
+    margin-left: -35px;
+    font-size: 33px;
 }
 
-.resto .fas:hover {
+.heart .fas:hover {
     opacity: 1;
     transform: translateY(-50%), scale(1.2);
 }
 
-.resto2 .fas {
-    color: transparent;
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    opacity: 0;
-    transition: all 100ms ease-in-out;
-    position: relative;
-    z-index: 10;
-    right: -6px;
-    top: -19px;
-}
 
-.resto2 .fas:hover {
-    opacity: 1;
-    transform: translateY(-50%), scale(1.2);
-}
-
-i.far.fa-heart {
-    margin-left: 106px;
-}
-
-i.fas.fa-heart {
+.heart .far {
     margin-left: 100px;
+    margin-top: -12px;
+    font-size: 30px;
 }
 
 .heart {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-content: space-between;
-
 }
 
-.pal {
-    width: 80%;
+.text {
+    margin-left: 5px;
 }
 
-.not {
-    width: 80%;
-}
-
-.fra {
-    width: 80%;
-}
-
-.del {
-    width: 80%;
-}
-
-/* Partie 6 Footer */
+/* FOOTER */
 
 .pied {
     background-color: #353535;
