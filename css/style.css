@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@keyframes voile {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes tourne {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -214,7 +227,7 @@ img {
 }
 
 .pied img {
-    width: 20%;
+    width: 37%;
     padding-top: 20px;
     color: white;
 }
@@ -248,24 +261,30 @@ i.fas.fa-hands-helping {
     margin-left: -40px;
 }
 
-@media (max-width: 768px) {
-
-.container .resto {
-    width: 93%;
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: voile 3s;
+    animation-fill-mode: forwards; 
+    animation-delay: 3s;
+    transform-origin: top;
 }
 
-.container .resto2 {
-    width: 100%;
-}
-
-.pied img {
-    width: 35%;
-    margin-left: 20px;
-}
-
-.m3 {
-    height: 264px;
-}
-
+.acueil {
+    height: 100px;
+    width: 100Px;
+    border: 5px solid transparent;
+    border-top: 5px solid #9356DC;
+    border-right: 5px solid #9356DC;
+    border-bottom: 5px solid #9356DC;
+    border-radius: 50%;
+    animation: tourne 3s infinite linear;
+    animation-iteration-count: 2;
 }
 
