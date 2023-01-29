@@ -20,6 +20,8 @@ body {
     margin: 0px;
     font-family:'Roboto', sans-serif;
 }
+
+
 /* Partie 1 OhMyFood */
 header {
     font-family: 'Shrikhand', cursive;
@@ -49,6 +51,7 @@ main .city {
 main .city i {
     font-size: 1.6rem;
 }
+
 /* Partie 3 reserver */
 
 .reservez {
@@ -71,15 +74,16 @@ main .city i {
     padding: 1rem 2rem;
     border: none;
     border-radius: 2rem;
-    background: linear-gradient(#9356DC, #FF79DA);
-    box-shadow: 4px 3px 17px -1px #000000;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 4px 3px 17px -1px #353535;
     margin-top: 1.5rem;
 } 
 
 .reservez button:hover {
     transform: scale(1.03);
     transition: all 300ms;
-    opacity: 1;
+    box-shadow: 4px 3px 17px -1px #000000;
+    opacity: 0.8;
 }
 
 /* Partie 4 Fonctionnement */
@@ -107,6 +111,11 @@ li {
     transform: scale(1.03);
     transition: all 300ms;
     opacity: 1;
+    background-color: #f7f2f6;
+}
+
+.fonct:hover i {
+    color: #9356DC;
 }
 
 i.fas {
@@ -137,39 +146,64 @@ i.fas {
 }
 
 .container {
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(211, 211, 211);
-    margin: -15px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .resto {
-    background-color: white;
-    border-radius: 20px;
-    margin: 20px;
+    width: 47%;
+    height: 325px;
+    background: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
     position: relative;
 }
 
-.resto2 {
-    
-    background-color: white;
-    border-radius: 20px;
-    margin: 20px;
-   
-}
-
-img {
+.resto img {
     width: 100%;
+    height: 250px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-.heart p {
-    padding: 11px;
-    margin-top: -7px;
-    margin-bottom: -3px;
+.heart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
+.heart .fas {
+    font-size: 35px;
+    color: transparent;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    opacity: 0;
+    transition: all 100ms ease-in-out;
+    z-index: 10;
+}
+
+.heart .far {
+    font-size: 30px;
+    margin-right: 2px;
+}
+
+
+.heart .fas:hover {
+    opacity: 1;
+    transform: translateY(-50%), scale(1.2);
+}
 
 .new {
     background-color: #99E2D0;
@@ -181,41 +215,6 @@ img {
 }
 
 
-.heart .fas {
-    color: transparent;
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    opacity: 0;
-    transition: all 100ms ease-in-out;
-    position: relative;
-    z-index: 10;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-left: -35px;
-    font-size: 33px;
-}
-
-.heart .fas:hover {
-    opacity: 1;
-    transform: translateY(-50%), scale(1.2);
-}
-
-
-.heart .far {
-    margin-left: 100px;
-    margin-top: -12px;
-    font-size: 30px;
-}
-
-.heart {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.text {
-    margin-left: 5px;
-}
 
 /* FOOTER */
 
@@ -227,7 +226,7 @@ img {
 }
 
 .pied img {
-    width: 37%;
+    max-width: 18%;
     padding-top: 20px;
     color: white;
 }
@@ -288,3 +287,57 @@ i.fas.fa-hands-helping {
     animation-iteration-count: 2;
 }
 
+
+@media (max-width: 1200px) {
+    .resto {
+        width: 47%;
+    }
+    .pied img {
+        max-width: 10%;
+        padding-top: 20px;
+        color: white;
+    }
+ }
+
+ @media (max-width: 720px) {
+    .resto {
+        width: 93%;
+    }
+ }
+/* 
+ * .container {
+    width: 10%;
+    height: auto;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: -15px;
+}
+
+.resto {
+    width: 10%;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.resto2 {
+    width: 10%;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 20px;
+    margin: 20px;
+   
+}
+
+img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+} */
