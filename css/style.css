@@ -43,9 +43,8 @@ main .city {
     gap: 1rem;
     background-color: #F3F3F3;
     text-align: center;
-    padding: 0.5rem;
-    margin-left: -17px;
-    margin-right: -17px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 main .city i {
@@ -114,7 +113,7 @@ li {
     background-color: #f7f2f6;
 }
 
-.fonct:hover i {
+li:hover i {
     color: #9356DC;
 }
 
@@ -146,15 +145,14 @@ i.fas {
 }
 
 .container {
-    width: 100%;
+    width: 108%;
     height: auto;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: -15px;
 }
 
 .resto {
@@ -220,20 +218,22 @@ i.fas {
 
 .pied {
     background-color: #353535;
-    margin-top: 50px;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
 }
 
-.pied img {
-    max-width: 18%;
-    padding-top: 20px;
+.titre_pied {
+    font-family: 'Shrikhand', cursive;
+    text-align:left;
     color: white;
+    margin-left: 22px;
+    margin-bottom: -11px;
+    padding-top: 10px;
 }
+
 
 .pied p {
     color: white;
-    margin-left: 20px;
+    
 }
 
 .alignement {
@@ -241,23 +241,20 @@ i.fas {
     align-items: center;
     color: white;
     margin-bottom: -15px;
+    margin-left: 57px;
 }
 
-.alignement span {
-    margin-left: 7px;
+.part {
+    margin-left: 51px;
+}
+
+.mention {
+    margin-left: 18px;
 }
 
 a:link {
     text-decoration: none;
     color: white;
-}
-
-i.fas.fa-utensils {
-    margin-left: -40px;
-}
-
-i.fas.fa-hands-helping {
-    margin-left: -40px;
 }
 
 .loader {
@@ -304,40 +301,4 @@ i.fas.fa-hands-helping {
         width: 93%;
     }
  }
-/* 
- * .container {
-    width: 10%;
-    height: auto;
-    background: #f6f6f6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-    margin: -15px;
-}
 
-.resto {
-    width: 10%;
-    background-color: white;
-    box-sizing: border-box;
-    font-size: 50px;
-    border-radius: 20px;
-    margin: 20px;
-    position: relative;
-}
-
-.resto2 {
-    width: 10%;
-    background-color: white;
-    box-sizing: border-box;
-    font-size: 50px;
-    border-radius: 20px;
-    margin: 20px;
-   
-}
-
-img {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-} */
