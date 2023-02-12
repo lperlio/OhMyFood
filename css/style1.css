@@ -32,37 +32,32 @@ body {
 
 /* Partie 1 OhMyFood */
 
-header {
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    margin-top: -20px;
-
-}
-
 .head {
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
+
+.card {
+    font-family: 'Shrikhand', cursive;
+    padding-right: 120px;
+}
+
+.card_arrow {
+   margin-top: 15px;
+   padding-left: 5px;
+   padding-right: 35px;
+   font-size: 20px;
+}
+
  
 a:visited {
     color: #000000;
 }
 
-h1 {
-    margin-top: 28px;
-    margin-bottom: 23px;
-    margin-left: 105px;
-}
-
-.fa-solid.fa-arrow-left {
-    margin-top: 1px;
-    margin-left: -261px;
-    font-size: 20px;
-}
-
 .fa-solid.fa-arrow-left:hover {
     transform: scale(1.2);
-}
+} 
 
 
 /* Partie 2 titre 2 */
@@ -75,59 +70,49 @@ h1 {
 
 .container h2 {
     font-family: 'Shrikhand', cursive;
-    padding-left: 12px;
-}
-
-.container_titre_icone {
-    display: inline;
-    flex-basis: 100%;
+    padding-left: 14px;
 }
 
 .container_titre {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     flex-basis: 100%;
     background-color: white;
     border-radius: 20px 20px 0 0;
+    justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-top: -21px;
 }
 
-.container_titre h2 {
-    display: flex;
-    flex-basis: 100%;
+.transparent {
+    margin-right: -32px;
+    font-size: 30px;
 }
+
+
+.purple {
+   margin-right: 30px;
+   font-size: 35px;
+   color: transparent;
+   background: linear-gradient(#9356DC, #FF79DA);
+   background-clip: text;
+   opacity: 0;
+   transition: all 100ms ease-in-out;
+}
+
+.purple:hover {
+    opacity: 1;
+    transform: translateY(-50%), scale(1.2);
+} 
 
 
 .container_image img {
     width: 100%;
     object-fit: cover;
 }
-
-i.fas.fa-heart {
-    color: transparent;
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    opacity: 0;
-    transition: all 100ms ease-in-out;
-    margin-right: 51px;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 166%;
-}
-
-i.fas.fa-heart:hover {
-    opacity: 1;
-    animation: mouvementi 1s ease;
-}
-
-i.far.fa-heart {
-    margin-right: -31px;
-    font-size: 163%;
-}
-
 
 
 /* partie 3 cartes */
@@ -144,6 +129,7 @@ i.far.fa-heart {
     position: relative;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 .menu-carte h3::after {
