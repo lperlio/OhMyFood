@@ -106,7 +106,8 @@ a:visited {
 
 .purple:hover {
     opacity: 1;
-    transform: translateY(-50%), scale(1.2);
+    transform: translateY(-50%);
+    transform: scale(1.2);
 } 
 
 
@@ -159,7 +160,6 @@ a:visited {
     margin-right: 5px;
     justify-content: space-between;
     overflow: hidden;
-    padding-top: -26px;
 }
 
 .icone {

@@ -196,7 +196,8 @@ i.fas {
 
 .heart .fas:hover {
     opacity: 1;
-    transform: translateY(-50%), scale(1.2);
+    transform: translateY(-50%);
+    transform: scale(1.2);
 }
 
 .new {
