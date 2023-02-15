@@ -14,7 +14,9 @@
     }
 }
 
-
+* {
+    margin: 0;
+}
 
 body {
     font-family:'Roboto', sans-serif;
@@ -40,6 +42,8 @@ main .city {
     gap: 1rem;
     background-color: #F3F3F3;
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 main .city i {
@@ -81,6 +85,10 @@ main .city i {
 }
 
 /* Partie 4 Fonctionnement */
+
+.fonct h2 {
+    margin-left: 10px;
+}
 
 .fonct li {
 background-color: #f6f6f6;
@@ -135,6 +143,7 @@ i.fas {
 
 .restaurant h2 {
     margin-top: 33px;
+    margin-left: 10px;
     margin-bottom: 30px;
     text-align: left;
 }
@@ -223,7 +232,7 @@ i.fas {
     text-align:left;
     color: white;
     margin-left: 22px;
-    margin-bottom: -11px;
+    margin-bottom: 5px;
     padding-top: 10px;
 }
 
@@ -237,7 +246,7 @@ i.fas {
     display: flex;
     align-items: center;
     color: white;
-    margin-bottom: -15px;
+    margin-bottom: 6px;
     margin-left: 57px;
 }
 
@@ -246,6 +255,7 @@ i.fas {
 }
 
 .mention {
+    margin-top: 5px;
     margin-left: 18px;
 }
 
@@ -280,6 +290,13 @@ a:link {
     animation: tourne 3s infinite linear;
     animation-iteration-count: 2;
 }
+
+@media (max-width: 1700px) {
+    .resto {
+        width: 45%; 
+        }
+     }
+
 
 
 @media (max-width: 1200px) {
