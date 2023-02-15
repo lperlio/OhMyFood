@@ -291,9 +291,9 @@ a:link {
     animation-iteration-count: 2;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 2000px) {
     .resto {
-        width: 45%; 
+        width: 45%;
         }
      }
 
