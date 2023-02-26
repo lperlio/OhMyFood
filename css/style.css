@@ -54,6 +54,9 @@ main .city i {
 
 .reservez {
     text-align: center;
+    padding-top: 6px;
+    padding-bottom: 46px;
+    background-color: #f6f6f6;
 }
 
 .reservez h2 {
@@ -88,6 +91,8 @@ main .city i {
 
 .fonct h2 {
     margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .fonct li {
@@ -142,15 +147,15 @@ i.fas {
 /* Partie 5 Restaurants */
 
 .restaurant h2 {
-    margin-top: 33px;
+    margin-top: 61px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: -48px;
     text-align: left;
 }
 
 .container {
     width: 100%;
-    height: auto;
+    padding-top: 69px;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
@@ -306,8 +311,12 @@ a:link {
  }
     
 
- @media (max-width: 600px) {
+ @media screen and (max-width: 600px) {
 .resto {
         width: 90%;
     }
+.fonct ol { 
+        margin-left: 30px;
+        width: 90%;
+}
  }
